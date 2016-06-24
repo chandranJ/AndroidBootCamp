@@ -53,8 +53,8 @@ public class RetrofitParsingJsonTest {
     public void shouldFillAdapter() throws Exception {
         Mockito.verify(mockRetrofitApiImpl).getSportDetail(callbackArgumentCaptor.capture());
 
-//        Callback<RetroPojo> callback = callbackArgumentCaptor.getValue();
-//        callback.success(mockPojo, mockResponse);
+       Callback<RetroPojo> callback = callbackArgumentCaptor.getValue();
+      // callback.success(mockPojo, mockResponse);
 //
 //        callback.failure(mockError);
     }
