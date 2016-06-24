@@ -16,9 +16,6 @@ import org.robolectric.annotation.Config;
 import org.robolectric.util.ActivityController;
 
 import retrofit.Callback;
-import retrofit.RetrofitError;
-
-import static org.mockito.Matchers.any;
 
 @RunWith(RobolectricGradleTestRunner.class)
 @Config(constants = BuildConfig.class)
@@ -44,7 +41,6 @@ public class RetrofitParsingJsonTest {
         ActivityController<MainActivity> controller = Robolectric.buildActivity(MainActivity.class);
         mainActivity = controller.get();
         mainActivity.setApi(mockRetrofitApiImpl);
-
         controller.create();
 
     }
@@ -53,9 +49,11 @@ public class RetrofitParsingJsonTest {
     public void shouldFillAdapter() throws Exception {
         Mockito.verify(mockRetrofitApiImpl).getSportDetail(callbackArgumentCaptor.capture());
 
-       Callback<RetroPojo> callback = callbackArgumentCaptor.getValue();
-      // callback.success(mockPojo, mockResponse);
+        Callback<RetroPojo> callback = callbackArgumentCaptor.getValue();
+        // callback.success(mockPojo, mockResponse);
 //
 //        callback.failure(mockError);
+
+
     }
 }
