@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return mRetroApi;
     }
-
+    
     public void setApi(RetroInterface retroApi) {
         mRetroApi = retroApi;
     }
