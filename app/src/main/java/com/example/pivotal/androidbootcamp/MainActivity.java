@@ -103,15 +103,14 @@ public class MainActivity extends AppCompatActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
-public RetroInterface getApi()
-{
-    if(mRetroApi==null)
-    {
-        mRetroApi=mRetroServiceManager.getService();
-    }
-    return mRetroApi;
+    public RetroInterface getApi() {
+        if (mRetroApi == null) {
+            mRetroApi = mRetroServiceManager.getService();
+        }
+        return mRetroApi;
 
-}
+    }
+
     public void setApi(RetroInterface retroApi) {
         mRetroApi = retroApi;
     }
