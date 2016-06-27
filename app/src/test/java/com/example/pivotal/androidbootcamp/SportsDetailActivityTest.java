@@ -56,6 +56,7 @@ public class SportsDetailActivityTest {
         Assert.assertEquals("Type", type.getText().toString());
 
         Assert.assertTrue(true);
+        Assert.assertTrue(true);
 
 
     }
