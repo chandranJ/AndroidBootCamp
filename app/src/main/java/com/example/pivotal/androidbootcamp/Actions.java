@@ -42,6 +42,7 @@ public class Actions {
     @SerializedName("sequence")
     @Expose
     private Integer sequence;
+    
 
     /**
      * @return The id
