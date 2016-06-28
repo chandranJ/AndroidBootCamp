@@ -44,7 +44,6 @@ public class SportsDetailActivityTest {
         Assert.assertNotNull("Text view could not found", type);
         Assert.assertNotNull("Text view could not found", direction);
         Assert.assertNotNull("Text view could not found", formation);
-        Assert.assertTrue(true);
     }
 
     @Test
