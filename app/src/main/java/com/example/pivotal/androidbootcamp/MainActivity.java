@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent detail_intent = new Intent(mContext, SportsDetailActivity.class);
                 detail_intent.putExtra("detailurl", mDetailUrl);
                 mContext.startActivity(detail_intent);
-
+fsgfsgrgsg
 
             }
         };
