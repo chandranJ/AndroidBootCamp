@@ -36,7 +36,7 @@ public class SportsDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sports_detail);
         ButterKnife.bind(this);
-thoishjdf
+thoishjdfaeefeegtfghdh
         mGraph = ObjectGraph.create(new AppInjectModule());
         mGraph.inject(this);
 
