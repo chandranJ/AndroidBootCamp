@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -10,11 +11,17 @@ android {
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+
+
+            versionCode System.getenv("BUILD_NUMBER") as Integer ?: 0
+            project.ext.set("archivesBaseName", "MyApp-");
+
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
         }
     }
 }
