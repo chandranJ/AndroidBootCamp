@@ -54,7 +54,7 @@ public class SportsDetailActivityTest {
         Assert.assertEquals("Formation", formation.getText().toString());
         Assert.assertEquals("Direction", direction.getText().toString());
         Assert.assertEquals("Type", type.getText().toString());
-
+        Assert.assertTrue(true);
 
     }
 }
